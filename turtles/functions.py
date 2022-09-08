@@ -23,20 +23,22 @@ def triangle(t,x,y,w,color,sidelen):
     t.forward(sidelen)
     t.right(120)
 
-def ngon(t,x,y,w,color,sidelen):
+def ngon(t,numsides,x,y,w,color,sidelen):
   t.penup()
   t.goto(x,y)
   t.width(w)
   t.color(color)
   t.pendown()
-  for i in range (n):
+  for i in range (numsides):
     t.forward(sidelen)
+    t.right(360 / numsides)
 
 wn = turtle.Screen()
 
 crush = turtle.Turtle()
 square(crush,0,0,5,"green",80)
 triangle(crush,0,0,5,"purple",100)
+ngon(crush,8,0,0,5,"green",80)
 
 squirt = turtle.Turtle()
 square(squirt,100,100,5,"red",50)
