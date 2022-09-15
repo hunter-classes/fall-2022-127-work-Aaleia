@@ -10,8 +10,14 @@ def is_even(n):
 
 testEqual(is_even(64), True)
 testEqual(is_even(23), False)
+
 print(is_even(32))
 print(is_even(13))
+
+result = is_even(18)
+print("Result for 18 is:" ,result)
+result = is_even(9)
+print("Result for 9 is:" ,result)
 
 # 8 - Now write the function is_odd(n) that returns True when n is odd and False otherwise.
 
@@ -23,8 +29,14 @@ def is_odd(n):
 
 testEqual(is_odd(64), False)
 testEqual(is_odd(23), True)
+
 print(is_odd(32))
 print(is_odd(13))
+
+result = is_odd(18)
+print("Result for 18 is:" ,result)
+result = is_odd(9)
+print("Result for 9 is:" ,result)
 
 # 10 - Write a function is_rightangled which, given the length of three sides of a triangle, will determine whether the triangle is right-angled. Assume that the third argument to the function is always the longest side.
 
