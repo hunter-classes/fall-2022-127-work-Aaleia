@@ -20,13 +20,13 @@ def ngon(t,numsides,x,y,w,color,sidelen):
   t.pendown()
   for i in range (numsides):
     t.forward(sidelen)
-    t.right(360 / numsides)
+    t.right(360/numsides)
 
 wn = turtle.Screen()
 
 crush = turtle.Turtle()
 hexagon(crush,50,50,5,"blue",100)
-ngon(crush,8,0,0,3,"purple",80)
+ngon(crush,8,20,20,5,"purple",80)
 
 wn.exitonclick()
 wn.mainloop()
