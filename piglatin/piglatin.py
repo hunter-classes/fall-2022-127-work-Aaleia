@@ -8,29 +8,29 @@ def bondify(name):
 print(bondify("james bond"))
 
 def piglatinify(word):
-  if word[-1] in ".,!?:;-" :
-    if word[0].isupper() :
-      if word[0] in "AEIOU" :
-        result = word[0:-1] + "yay" + word[-1]
-      else:
-        result = word[1].upper() + word[2:-1] + word[0].lower() + "ay" + word[-1]
-    if word[0].islower() :
-      if word[0] in "aeiou" :
-        result = word[0:-1] + "yay" + word[-1]
-      else:
-        result = word[1:-1] + word[0] + "ay" + word[-1]
-  else:
-    if word[0].isupper() :
-      if word[0] in "AEIOU" :
-        result = word + "yay"
-      else:
-        result = word[1].upper() + word[2:] + word[0].lower() + "ay"
-    if word[0].islower() :
-      if word[0] in "aeiou" :
-        result = word + "yay"
-      else:
-        result = word[1:] + word[0] + "ay"
-  return result
+    if word[-1] in ".,!?:;-" :
+        if word[0].isupper() :
+            if word[0] in "AEIOU" :
+                result = word[0:-1] + "yay" + word[-1]
+            else:
+                result = word[1].upper() + word[2:-1] + word[0].lower() + "ay" + word[-1]
+        if word[0].islower() :
+            if word[0] in "aeiou" :
+                result = word[0:-1] + "yay" + word[-1]
+            else:
+                result = word[1:-1] + word[0] + "ay" + word[-1]
+    else:
+        if word[0].isupper() :
+            if word[0] in "AEIOU" :
+                result = word + "yay"
+            else:
+                result = word[1].upper() + word[2:] + word[0].lower() + "ay"
+        if word[0].islower() :
+            if word[0] in "aeiou" :
+                result = word + "yay"
+            else:
+                result = word[1:] + word[0] + "ay"
+    return result
 
 test_word = "able"
 result = piglatinify(test_word)
