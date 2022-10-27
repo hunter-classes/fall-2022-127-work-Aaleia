@@ -1,17 +1,17 @@
 #1: findLargest(l) which takes in a list of numbers and returns the
-#   value of the smallest number
+#   value of the largest number
 
-def findlargest(lst):
+def findLargest(lst):
 
-    smallest = lst[0]
+    largest = lst[0]
     for num in lst:
-        if num < smallest:
-            smallest = num
+        if num < largest:
+            largest = num
 
-    return smallest
+    return largest
 
 list1 = [45,6,78,12,789,14]
-result = findlargest(list1)
+result = findLargest(list1)
 print('1:',list1,'-->',result)
 
 #2: freq(l,v) which takes a list of numbers (l) and a value (v).
