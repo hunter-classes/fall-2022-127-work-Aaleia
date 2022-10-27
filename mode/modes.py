@@ -18,12 +18,12 @@ print('1:',list1,'-->',result)
 #   The function will return the frequency of v, that is, the number of
 #   times that v appears in l.
 
- def freq(l,v):
-    frequency = 0
-    for num in l:
-        if num == v:
-            frequency = frequency + 1
-    return frequency
+def freq(l,v):
+  frequency = 0
+  for num in l:
+      if num == v:
+        frequency = frequency + 1
+  return frequency
 
 list2 = [7,5,6,4,7,8,5,6,7]
 value = 7
