@@ -2,6 +2,8 @@ import random
 
 noun = ["person", "squirrel", "villain"]
 verb = ["walk", "run", "drive"]
+adjective = ["blue","obtuse","organized"]
+adverb = ["quickly","obscenely","abstractly"]
 
 file = open("data.dat")
 
