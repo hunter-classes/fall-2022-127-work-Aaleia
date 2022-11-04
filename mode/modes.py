@@ -115,4 +115,4 @@ def fastMode(dataset):
   return mode
 
 result = fastMode(dataset)
-print("Faster mode -->", result) 
+print("Faster mode -->", result)
