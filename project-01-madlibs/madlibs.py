@@ -23,4 +23,7 @@ def madlib(story):
     final_result = " ".join(final)
   return final_result
 
+print('Version 1:')
+print(madlib(story))
+print('Version 2:')
 print(madlib(story))
