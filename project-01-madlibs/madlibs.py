@@ -16,10 +16,9 @@ story = file.read().split()
 
 def madlib(story):
   final = []
+  random_name = random.choice(name)
   for word in story:
-    if word == '<NAME>':
-      word = word.replace("<NAME>",random.choice(name))
-    final = final + [word.replace('<NOUN>', random.choice(noun)).replace("<VERB>", random.choice(verb)).replace("<ADJ>", random.choice(adjective)).replace("<ADVERB>", random.choice(adverb))]
+    final = final + [word.replace('<NAME>', random_name).replace('<NOUN>', random.choice(noun)).replace("<VERB>", random.choice(verb)).replace("<ADJ>", random.choice(adjective)).replace("<ADVERB>", random.choice(adverb))]
     final_result = " ".join(final)
   return final_result
 
