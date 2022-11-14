@@ -12,9 +12,6 @@ def count_letters(s):
       counts[letter] = 1
   return counts
 
-result = count_letters(s)
-print(result)
-
 def count_words(s):
   counts = {}
   for word in s.split():
@@ -27,3 +24,5 @@ def count_words(s):
 
 letter_counts = count_letters(s)
 word_counts = count_words(s)
+print(count_letters(s))
+print(word_counts(s))
