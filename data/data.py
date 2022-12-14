@@ -8,24 +8,6 @@ import sys
 import csv
 csv.field_size_limit(sys.maxsize)
 
-read = csv.DictReader(open("taxi_zones.csv"))
-zonedata = [x for x in read]
-boro = [str(x['borough']) for x in zonedata]
-
-def freq1(boro,l):
-    return boro.count(l)
-
-Queens = freq1(boro,"Queens")
-Brooklyn = freq1(boro,"Brooklyn")
-Manhattan = freq1(boro,"Manhattan")
-Bronx = freq1(boro,"Bronx")
-SI = freq1(boro,"Staten Island")
-
-boros = {'Queens':Queens, 'Brooklyn':Brooklyn, 'Bronx':Bronx, 'Manhattan':Manhattan, 'Staten Island': SI}
-largest = max(boros, key = boros.get)
-
-print(largest,"has the most taxi zones.")
-
 with open('Population.csv') as file:
   header = next(file)
   list = csv.reader(file)
@@ -65,6 +47,24 @@ pops = {'Queens':q_population, 'Brooklyn':k_population, 'Bronx':b_population, 'M
 largest_pop = max(pops, key = pops.get)
 
 print(largest_pop,"has the largest population.")
+
+read = csv.DictReader(open("taxi_zones.csv"))
+zonedata = [x for x in read]
+boro = [str(x['borough']) for x in zonedata]
+
+def freq1(boro,l):
+    return boro.count(l)
+
+Queens = freq1(boro,"Queens")
+Brooklyn = freq1(boro,"Brooklyn")
+Manhattan = freq1(boro,"Manhattan")
+Bronx = freq1(boro,"Bronx")
+SI = freq1(boro,"Staten Island")
+
+boros = {'Queens':Queens, 'Brooklyn':Brooklyn, 'Bronx':Bronx, 'Manhattan':Manhattan, 'Staten Island': SI}
+largest = max(boros, key = boros.get)
+
+print(largest,"has the most taxi zones.")
 
 if largest == largest_pop:
   print("There is a correlation between population size and number of taxi zones.")
