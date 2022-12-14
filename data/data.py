@@ -6,7 +6,7 @@ This analysis finds the NYC borough with the greatest number of taxi zones and t
 
 import sys
 import csv
-csv.field_size_limit(sys.maxsize)
+csv.field_size_limit(sys.maxsize) 
 
 with open('Population.csv') as file:
   header = next(file)
@@ -55,11 +55,11 @@ boro = [str(x['borough']) for x in zonedata]
 def freq1(boro,l):
     return boro.count(l)
 
-Queens = freq1(boro,"Queens")
-Brooklyn = freq1(boro,"Brooklyn")
-Manhattan = freq1(boro,"Manhattan")
-Bronx = freq1(boro,"Bronx")
-SI = freq1(boro,"Staten Island")
+Queens = freq1(boro,'Queens')
+Brooklyn = freq1(boro,'Brooklyn')
+Manhattan = freq1(boro,'Manhattan')
+Bronx = freq1(boro,'Bronx')
+SI = freq1(boro,'Staten Island')
 
 boros = {'Queens':Queens, 'Brooklyn':Brooklyn, 'Bronx':Bronx, 'Manhattan':Manhattan, 'Staten Island': SI}
 largest = max(boros, key = boros.get)
