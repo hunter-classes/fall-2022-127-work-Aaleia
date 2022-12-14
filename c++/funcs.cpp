@@ -10,7 +10,7 @@ int add_two_numbers(int a , int b){
   int c;
   std::cout << "In func a: " << a << " b: " << b << "/n";
   c = a + b;
-  return c
+  return c;
 }
 
 int main()
@@ -22,5 +22,5 @@ int main()
   result = add_two_numbers(b,a);
   std:cout << "a: " << a << " b: " << b << "/n";
   std::cout<< result << "/n";
-  return 0
+  return 0;
 }
