@@ -5,11 +5,11 @@ void oddoreven(int num)
 {
 if(num % 2 == 0)
 {
-  std::cout<<"Even\n";
+  std::cout<<num<<" is even.\n";
 }
 else
 {
-  std::cout<<"Odd\n"; 
+  std::cout<<num<<" is odd.\n"; 
   }
 }
 
@@ -23,5 +23,6 @@ int main()
   std::cout << "Hello World\n" << std::endl;
   int x = -10;
   std::cout << "The absolute value is " << absolutevalue(x) << '\n';
+  oddoreven(24);
 
 }
