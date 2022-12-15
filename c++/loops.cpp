@@ -1,4 +1,5 @@
 #include <iostream>
+//loops
 
 int main()
 {
@@ -31,5 +32,4 @@ int main()
     std::cut << x << ", ";
   }
   std::cout << std:endl;
-  // return 0;
 }
